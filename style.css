@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/Himalaya.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.logo {
+    width: 100px;  
+    height: auto;  
+    display: block;
+    filter: invert(10%) brightness(80%);
+}
+
+nav{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #7D1424;
+    display: block;
+    margin: auto; 
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 70%;
+    color: #7D1424;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.about{
+    padding: 50px 0;
+    text-align: center;
+    background: #ecf0f1;
+}
+  
+.about h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+  
+.footer{
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
