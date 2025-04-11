@@ -60,6 +60,12 @@ nav {
   width: 100%;
 }
 
+.products h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 .products {
   display: flex;
   flex: 1; 
@@ -67,6 +73,12 @@ nav {
   justify-content: center;
   padding: 2rem;
   gap: 2rem;
+}
+
+.new-txt{
+  text-align: center;
+  padding-top: 15px;
+  font-size: 2rem;
 }
 
 .product-card {
